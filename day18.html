@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        border: 4px solid rgb(242, 85, 23);
+        height: 450px;
+        width: 400px;
+        background-image: url(./island.jpg);
+        background-size: cover;
+        border-radius: 50px;
+      }
+      label {
+        left: 50px;
+      }
+      [for] {
+        color: rgb(23, 23, 197);
+        font-weight: bolder;
+      }
+      [id="fname"] {
+        background-color: rgb(192, 231, 231);
+      }
+      [placeholder~="second"] {
+        background-color: rgb(237, 166, 166);
+      }
+      [placeholder$="com"] {
+        background-color: rgb(233, 197, 80);
+      }
+      [class|="aa"] {
+        background-color: rgb(204, 232, 176);
+      }
+      [type^="tel"] {
+        background-color: rgb(206, 162, 130);
+      }
+      [type="radio"] {
+        color: rgb(31, 55, 175);
+      }
+      [class*="asd"] {
+        color: rgb(23, 23, 197);
+        font-weight: bolder;
+
+      }h2{
+        color: rgb(14, 202, 55);
+        left: 50px;
+      }
+    </style>
+  </head>
+  <body><h2> Explore Login Form</h2>
+    <form action="">
+      <br><br>
+      <label for="fname">FirstName:</label>
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        placeholder="first name"
+        required
+      /><br /><br />
+      <label for="sname">SecondName:</label>
+      <input
+        type="text"
+        id="sname"
+        name="sname"
+        placeholder="second name"
+        required
+      /><br /><br />
+      <label for="mail">E-mail:</label>
+      <input
+        type="email"
+        id="mail"
+        name="mail"
+        placeholder="aabc@gmil.com"
+        required
+      /><br /><br />
+      <label for="pswd">Password:</label>
+      <input
+        class="aa-nn-jk"
+        type="pswd"
+        id="pswd"
+        placeholder="1234567890"
+        pattern="[0-9]{10}"
+      /><br /><br />
+      <label for="mb">Mobile:</label>
+      <input
+        type="tel"
+        id="mb"
+        placeholder="1234-123-123"
+        pattern="[0-9]{10}"
+      /><br /><br />
+      <label for="">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" /><label
+        for="male"
+        >Male</label
+      >
+      <input type="radio" id="female" name="gender" value="female" /><label
+        for="female"
+        >Female</label
+      >
+      <input type="radio" id="other" name="gender" value="other" /><label
+        for="other"
+        >other</label
+      ><br /><br />
+      <label for="">Languages known:</label>
+      <input name="lang" type="checkbox" id="lang1" value="lang1" /><label
+        for="lang1"
+        >Python</label
+      >
+      <input name="lang" type="checkbox" id="lang2" value="lang2" /><label
+        for="lang2"
+        >Java</label
+      >
+      <input name="lang" type="checkbox" id="lang3" value="lang3" /><label
+        for="lang3"
+        >Javascript</label
+      ><br /><br />
+      <input name="agree" type="checkbox" id="agree" value="agree" />
+      <label class="asd-dsa"
+        >I agree the terms and conditions mentioned above</label
+      >
+      <br /><br />
+      <input type="reset" />
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>
